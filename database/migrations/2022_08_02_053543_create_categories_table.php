@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name", 100);
             $table->string("description", 500)->nullable();
+            $table->string("cover_photo")->nullable();
             $table->foreignId('created_by')->nullable()->constrained('users')->onDelete('set null');
             $table->foreignId('deleted_by')->nullable()->constrained('users')->onDelete('set null');
             $table->timestamps();

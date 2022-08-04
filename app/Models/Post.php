@@ -14,12 +14,10 @@ class Post extends Model
         "description",
         "path",
         "is_video_post",
-        "is_tile_post"
     ];
 
     protected $casts = [
         'is_video' => 'boolean',
-        'is_tile_post' => 'boolean',
     ];
 
     public function category()
